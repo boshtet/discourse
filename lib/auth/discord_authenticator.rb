@@ -17,7 +17,7 @@ class Auth::DiscordAuthenticator < Auth::ManagedAuthenticator
     info do
       {
         name: raw_info['username'],
-        email: "discord-#{raw_info['id']}@discourse.terminus.systems",
+        email: "discordapp-#{raw_info['id']}@discourse.terminus.systems",
         image: "https://cdn.discordapp.com/avatars/#{raw_info['id']}/#{raw_info['avatar']}"
       }
     end
